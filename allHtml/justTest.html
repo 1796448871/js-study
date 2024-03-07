@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>JavaScript 函数</h2>
+
+    <p>本例调用了一个执行计算的函数，然后返回结果：</p>
+
+    <p id="demo" onclick="say()"></p>
+
+    <script>
+        function Person(name, age) {
+            this.name = name;
+            this.age = age;
+
+            function eat() {
+                console.log(name + "吃西瓜");
+            }
+
+            function work() {
+                console.log(name + "在工作");
+            }
+        }
+
+            var person1 = new Person("李四", 18);
+            console.log("姓名:" + person1.name);
+            console.log("年龄:" + person1.age);
+            person1.eat;
+            person1.work;
+    </script>
+
+</body>
+
+</html>
